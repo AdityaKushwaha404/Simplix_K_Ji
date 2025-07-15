@@ -1,11 +1,23 @@
 import { Button } from "@/components/ui/button";
+import HeroSection from "../components/home/herosection";
+import BgGradient from "../components/common/bg-gradient";
+import DemoSection from "../components/home/demo-section";
+import HowItWorksSection from "../components/home/how-it-works-section";
+import PricingSection from '../components/home/pricing-section';
+import CTASection from '../components/home/cta-section';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Button variant="outline">
-Click Me
-        </Button>
+    <div className="relative w-full">
+      <BgGradient/>
+        <div className="flex flex-col">
+          <HeroSection />
+          <DemoSection />
+          <HowItWorksSection />
+          <PricingSection />
+          <CTASection />
+        </div>
+    
     </div>
   );
 }
