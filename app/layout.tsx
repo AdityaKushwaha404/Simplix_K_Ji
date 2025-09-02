@@ -33,6 +33,7 @@ export default function RootLayout({
 
             <Footer />
           </div>
+{/* Ensure Toaster is used correctly and not passed objects as children */}
 <Toaster richColors position="top-right" closeButton offset={60} />
 
         </body>
